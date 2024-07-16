@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyAnswers</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/logo_blue.png" alt="Aphrosphere logo" class="logo"/>
+        <div class="header-right">
+            <button id="askQuestionBtn">Ask a question</button>
+            <img src="./assets/Notification.webp" alt="Notification" class="icon"/>
+            <img src="./assets/african_pro3.jpg" alt="User" class="post-icon"/>
+            <img src="./assets/arrow-drop-down.webp" alt="Dropdown" class="icon" id="dropdownIcon"/>
+        </div>
+    </header>
+    <div class="container">
+        <nav>
+            <section><img src="./assets/search.webp" alt="Search" class="icon"/>Search</section>
+            MENU 
+            <section><img src="./assets/menu.webp" alt="Menu" class="icon"/>My Groups</section>
+            <section><img src="./assets/else.webp" alt="Start Something Else" class="icon"/>Start Something Else</section>
+            Personal Navigator
+            <section><img src="./assets/question.webp" alt="Your Questions" class="icon"/>Your Questions</section>
+            <section><img src="./assets/answer.webp" alt="Your Answers" class="icon"/>Your Answers</section>
+            <section><img src="./assets/upvote.webp" alt="Your Votes" class="icon"/>Your Votes</section>
+        </nav>
+        <main>
+            <section class="post">
+                <div class="post-header">
+                    <img src='./assets/african_pro.jpg' alt="User" class="post-icon"/>
+                    <div>
+                        <div class="username">@Golanginya</div>
+                        <div class="post-date">12 November 2020 19:35</div>
+                    </div>
+                </div>
+                <h2>How to patch KDE on FreeBSD?</h2>
+                <div class="code-snippet">
+                    <img src="./assets/code-snippet.png" alt="code snippet">
+                </div>
+                <p>Mi magna sed nec nisl mattis. Magna cursus tincidunt rhoncus imperdiet fermentum pretium, pharetra nisi. Euismod.</p>
+                <div class="answer-reacts">
+                    <img src="./assets/upvote.webp" alt="Upvote" class="react-icon"/> 30 
+                    <img src="./assets/down_vote.webp" alt="Downvote" class="react-icon"/> 2
+                </div>
+            </section>
+            <section class="suggestions">
+                <input type="text" placeholder="Type here your wise suggestion" id="suggestionInput"/>
+                <button id="submitSuggestionBtn">Answer</button>
+                <div id="suggestionsList"></div>
+            </section>
+            <section class="comment">
+                <div class="comment-header">
+                    <img src='./assets/african_pro2.jpg' alt="User" class="comment-icon"/>
+                    <div>
+                        <div class="username">@unkind</div>
+                        <div class="comment-date">12 November 2020 19:35</div>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare rutrum amet, a nunc mi lacinia in iaculis. Pharetra sit integer nibh urna. Placera ut adipiscing nulla lectus vulputate massa, scelerisque.</p>
+            </section>
+        </main>
+        <aside>
+            <img src='./assets/african_pro.jpg' alt="User" class="profile-img"/>
+            <div class="social-icons"> 
+                <img src='./assets/facebook.webp' alt="Facebook" class="social-icon"/>
+                <img src='./assets/Instagram-128.webp' alt="Instagram" class="social-icon"/>
+                <img src='./assets/linkedin-128.webp' alt="LinkedIn" class="social-icon"/>
+                <img src='./assets/github.webp' alt="GitHub" class="social-icon"/>
+            </div>
+        </aside>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>
