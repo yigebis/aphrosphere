@@ -1,0 +1,334 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #CFDBFB;
+}
+
+.header_left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    margin-right: 30px;
+}
+
+.tagline {
+    font-family: 'Ranga', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tagline-top, .tagline-bottom{
+    font-size: 24px;
+}
+.tagline-bottom span {
+    color: white;
+}
+.header_middle {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 600px;
+    margin: 0, 20px;
+    position: relative;
+}
+.search_icon{
+    width: 20px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.dark_mode_icon{
+    width: 20px;
+    margin: 0 20px;
+}
+.search_bar {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.header_right {
+    display: flex;
+    align-items: center;
+}
+.profile_pic {
+    width: 35px;
+    margin: 0 5px 0 20px;
+}
+.login_btn, .signup_btn {
+    margin: 0 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #1DA1F2;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+.signup_btn {
+    background-color: white;
+    color: #1DA1F2;
+}
+.theme_icon, .notification_icon {
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.main_content{
+    display: flex;
+    padding: 20px;
+}
+.main_left {
+    flex: 3;
+    margin-right: 20px;
+}
+
+.question_section, .answers_section {
+    margin-bottom: 20px;
+}
+.question_section h2, .answers_section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.question_card, .answer_card {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #fff
+}
+.avatar {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.qustion_content h3, .answer_content h3 {
+    margin: 0;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.question-content p, .answer_content p {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.question_meta, .answer_meta {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    color: #777;
+}
+.sidebar {
+    height: fit-content;
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    margin-top: 70px;
+}
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.groups_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.groups_list li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.groups_list li:last-child {
+    border-bottom: none;
+}
+.group_icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.time {
+    margin-left: 200px;
+    color: #777;
+    font-size: 13px;
+}
+.upvote_icon, .comment_icon, .share_icon {
+    width: 13px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.my_menu {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    margin-right: 20px;
+    height: fit-content;
+    margin-top: 65px;
+}
+.my_menu h2 {
+    font-size: 14px;
+    color: #777;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.my_menu nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.my_menu nav ul li {
+    margin-bottom: 10px;
+}
+.my_menu nav ul li img {
+    width: 20px;
+    margin-right: 10px;
+}
+.my_menu nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.dashboard_content {
+    flex: 3;
+}
+.widgets {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+.widget {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.group_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.group_card {
+    background-color: #e9f0ff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.previous_groups {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+.previous_groups li {
+    margin-bottom: 5px;
+}
+.success_stories {
+    display: flex;
+    gap: 10px;
+}
+.story {
+    background-color: #e9f0ff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+.login_body {
+    background-color: rgba(91, 134, 229, 0.51);
+    font-family: "ABeeZee", sans-serif;
+}
+
+.login_container {
+    display: flex;
+    height: 100vh;  
+}
+.left_side {
+    flex: 1;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.left_side h2 {
+    font-weight: 50;
+    font-size: 50px;
+    color: white;
+    text-align: start;
+}
+.left_side h2 span {
+    color: #5B86E5
+}
+.right_side {
+    background-color: white;
+    flex: 3;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    font-weight: 300;
+}
+.login_section {
+    width: 45%;
+}
+.sign_in_text {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+.input_container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.email_container, .password_container {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #9D9D9D;
+    margin-bottom: 15px;
+}
+.email_container:focus, .password_container:focus {
+    border-bottom-color: #5B86E5;
+}
+.login_button {
+    width: 100%;
+    background-color: #5B86E5;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    color: white;
+}
+.right_side a {
+    text-decoration: none;
+    color: #5B86E5;
+}
