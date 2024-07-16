@@ -102,6 +102,7 @@ nav{
 .message {
     display: flex;
     margin-bottom: 10px;
+    position: relative;
 }
 
 .other-message {
@@ -153,6 +154,26 @@ nav{
     outline: none;
     cursor: pointer;
     border-radius: 5px;
+}
+.votes-container {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    position: relative;
+    bottom: 0;
+    margin-left: 70px;
+}
+
+.votes-container i {
+    margin-right: 5px;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.verified-icon {
+    color: #28a745;
+    position: relative;
+    right: 80px;
 }
 
 .my-message{

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Node.js Learners</title>
     <link rel="stylesheet" href="groupDetails.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
@@ -45,8 +47,25 @@
                             <span class="date">2024-07-11 10:00</span>
                         </div>
                         <p>This is an answer</p>
-                    </div>
-                    <button class="reactions" onclick="upvote()">Upvote</button>
+                        <div class="col-md-2 text-right votes-container">
+                            <i class="fas fa-arrow-up"></i> <span id="vote-count">42</span>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="message other-message">
+                    <img src="https://via.placeholder.com/50" alt="User" class="user-photo">
+                    <div class="message-content">
+                        <div class="message-header">
+                            <span class="username">Alice</span>
+                            <span class="date">2024-07-11 10:00</span>
+                        </div>
+                        <p>This is a verified answer</p>
+                        <div class="col-md-2 text-right votes-container">
+                            <i class="fas fa-check-circle verified-icon"></i>
+                            <i class="fas fa-arrow-up"></i> <span id="vote-count">89</span>
+                        </div>
+                    </div>                    
                 </div>
 
                 <div class="message my-message-container">
@@ -55,7 +74,7 @@
                             <span class="username">Me</span>
                             <span class="date">2024-07-11 10:01</span>
                         </div>
-                        <p>I'm good, thanks! How about you?</p>
+                        <p>Asking a question</p>
                     </div>
                     <img src="https://via.placeholder.com/50" alt="User" class="user-photo">
                 </div>
