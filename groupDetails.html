@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js Learners</title>
+    <link rel="stylesheet" href="groupDetails.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <div id="main">
+        <nav>
+
+        </nav>
+        <div class="chat-container">
+            <div id="group-info">
+                <p>238 Members</p>
+                <p>Group Expiration : Jun 13 2024</p>
+                <p>Mentor : Mekonnen Tesema  <a href="about-mentor.html?name=Mekonnen Tesema" target="_blank">[About Mekonnen]</a></p>
+            </div>
+            <div id="title-header" onclick="showGroupInfo()">
+                <h1>Node.js Learners</h1>
+                <input type="text" placeholder="Search messages" class="search-bar">
+            </div>
+            <div class="chat-window">
+                <div class="message other-message">
+                    <img src="https://via.placeholder.com/50" alt="User" class="user-photo">
+                    <div class="message-content">
+                        <div class="message-header">
+                            <span class="username">Alice</span>
+                            <span class="date">2024-07-11 10:00</span>
+                        </div>
+                        <p>This is a question</p>
+                    </div>
+                    <button class="reactions" onclick="answer('Alice', 'This is a message')">Answer</button>
+                </div>
+                
+                <div class="message other-message">
+                    <img src="https://via.placeholder.com/50" alt="User" class="user-photo">
+                    <div class="message-content">
+                        <div class="message-header">
+                            <span class="username">Alice</span>
+                            <span class="date">2024-07-11 10:00</span>
+                        </div>
+                        <p>This is an answer</p>
+                    </div>
+                    <button class="reactions" onclick="upvote()">Upvote</button>
+                </div>
+
+                <div class="message my-message-container">
+                    <div class="message-content my-message">
+                        <div class="message-header">
+                            <span class="username">Me</span>
+                            <span class="date">2024-07-11 10:01</span>
+                        </div>
+                        <p>I'm good, thanks! How about you?</p>
+                    </div>
+                    <img src="https://via.placeholder.com/50" alt="User" class="user-photo">
+                </div>
+                <!-- More messages here -->
+            </div>
+            <div id="message-input-bar">
+
+                <div id="reply-container">
+
+                </div>
+                <div id="answer-input">
+                    <input type="text" placeholder="Type a message..." class="message-input">
+                    <button class="send-button" onclick="send()">Send</button>
+                </div>
+                <div class="error" id="message-empty">
+                    Empty message!
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

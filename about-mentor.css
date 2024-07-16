@@ -1,0 +1,41 @@
+#profile-section{
+    background-color: blue;
+    display: flex;
+    padding: 15px;
+}
+#photo{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+#name{
+    position: relative;
+    top: 40px;
+    font-size: 30px;
+    color: white;
+}
+#details{
+    background-color: whitesmoke;
+    margin-top: -15px;
+    padding: 20px;
+    font-size: 19px;
+}
+#details label{
+    font-weight: bold;
+    font-size: 23px;
+}
+
+#contact{
+    background-color: blue;
+    color: white;
+    margin-top: -15px;
+    padding: 20px;
+    font-size: 19px;
+}
+#contact a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
