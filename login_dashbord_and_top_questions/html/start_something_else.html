@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afrosphere - Start Something Else</title>
+    <link rel="stylesheet" href="../css/style3.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header_left">
+            <img class="logo" src="../images/logo.jpg" alt="">
+            <div class="tagline">
+                <span class="tagline-top">Learn, Collaborate</span>
+                <span class="tagline-bottom">and Succeed <span>Together</span></span>
+            </div>
+        </div>
+        <div class="header_middle">
+            <input type="text" placeholder="Search Topics" class="search_bar">
+            <img class="search_icon" src="../images/search.svg" alt="">
+        </div>
+        <div class="header_right">
+            <button class="login_btn">Login</button>
+            <button class="signup_btn">Sign Up</button>
+            <img class="dark_mode_icon" src="../images/dark-mode.svg" alt="">
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="container">
+            <h1>Start Something Else</h1>
+            <p>Choose a topic to start learning and join a group of peers. Please note that you will be placed in a waiting list before joining the group.</p>
+        </div>
+    </section>
+
+    <section class="topics">
+        <div class="container">
+            <h2>Select a Topic</h2>
+            <div class="topic-cards" id="topic-cards">
+                <div class="topic-card">
+                    <h3>Flutter Development</h3>
+                    <p>Join a group of Flutter enthusiasts and start building beautiful mobile apps.</p>
+                    <button class="join_btn">Join Waiting List</button>
+                </div>
+                <div class="topic-card">
+                    <h3>AWS Certification</h3>
+                    <p>Prepare for AWS certifications with a dedicated group of learners.</p>
+                    <button class="join_btn">Join Waiting List</button>
+                </div>
+                <div class="topic-card">
+                    <h3>Full-Stack Web Development</h3>
+                    <p>Learn both front-end and back-end technologies in a comprehensive group study.</p>
+                    <button class="join_btn">Join Waiting List</button>
+                </div>
+            </div>
+            <div class="add-topic">
+                <h3>Can't find your topic? Add it below:</h3>
+                <select id="new-topic-dropdown">
+                    <option value="">Select a topic</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="Cyber Security">Cyber Security</option>
+                    <option value="UI/UX Design">UI/UX Design</option>
+                    <option value="DevOps">DevOps</option>
+                </select>
+                <button class="add_btn" onclick="addTopic()">Add Topic</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-info">
+                <p>Contact Us: yigerem.bisrat@a2sv.org | +2519 4058 8298</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">FAQ</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../JS/script.js"></script>
+
+</body>
+</html>
